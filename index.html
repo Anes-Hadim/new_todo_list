@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./images/rocket.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <img src="./images/Logo.svg" alt="logo">
+  </div>
+  <div class="main">
+    <div class="newTask">
+      <input type="text" placeholder="write your task here" class="addTask">
+      <button class="add" onclick="addTask()">Create<img src="./images/plus.svg" alt="plus"></button>
+    </div>
+    <div class="info">
+      <div id="t1">
+        <p>Tasks number</p>
+        <span id="all">0</span>
+      </div>
+      <div id="t2">
+        <p>completed Tasks</p>
+        <span id="completed">0</span>
+      </div>
+    </div>
+    <div class="tasks">
+      <img src="./images/Clipboard.svg" alt="clipboard">
+      <p>Add the task you want above</p>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
